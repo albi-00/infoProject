@@ -541,6 +541,10 @@ ol {
 	font-size: 14px;
 	color: #6f6f6f;
 	display: inline-block;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 91b77f536608a6b510c152ebe7915670aff0a679
 }
 
 .header__cart .header__cart__price span {
@@ -591,6 +595,10 @@ ol {
 	position: relative;
 	padding: 10px 25px 10px 40px;
 	cursor: pointer;
+<<<<<<< HEAD
+=======
+	border-radius: 10px;
+>>>>>>> 91b77f536608a6b510c152ebe7915670aff0a679
 }
 
 .hero__categories__all i {
