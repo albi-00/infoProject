@@ -35,9 +35,7 @@
     <!-- Humberger Begin -->
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
-        <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
-        </div>
+        
         <div class="humberger__menu__cart">
             <ul>
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
@@ -96,7 +94,7 @@
                 <div class="row flex-nowrap ">
                   <div class="col-lg-4">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                        <a href="./index.html"><img src="{% static 'img/logo2.png' %}" alt=""></a>
                     </div>
                   </div>
                     <div class="col-lg-4 mt-3">
@@ -168,14 +166,16 @@
                                       </button>
                                       </div>
                                           <form method="POST">
-                                              <span>Todavia no tenes cuenta?</span>
-                                              <h1>FORMULARIO PARA REGISTRARSE </h1>
-                                              <form method= "POST">{% csrf_token %}
-                                                  {{form.as_p}}
-                                                  {{form.errors}}
-                                                  <input type="submit" value="Registrarse">
-
-                                          </form>
+                                              <div ALIGN=center>Todavia no tenes cuenta?</div>
+                                              <div ALIGN=center>FORMULARIO PARA REGISTRARSE </div> 
+                                             <p>  &nbsp;<DIV ALIGN="LEFT">
+                                               <form method= "POST">{% csrf_token %}
+                                                {{form.as_p}}
+                                                {{form.errors}}
+                                                <input type="submit" value="Registrarse">
+                                                     </form>
+                                                 </div>
+                                             </p>
                                           <div class="modal-footer">
                                               <button type="submit" id="btnGuardar" class="btn btn-success btnGuardarCategoria" data-dismiss="modal">
                                               Guardar
