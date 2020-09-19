@@ -126,7 +126,15 @@
                                   aria-haspopup="true"
                                   aria-expanded="false"
                                 >
-                                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Hernán Maona</span>
+                                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                    
+                                    {%if user.is_authenticated %}
+                                    <p>hola {{user.username}}</p>
+                                    {%endif%}
+	 	 	                        <a href="{%url 'Registro' %}">registro</a><br>
+                                   
+
+                                  </span>
                                   <img class="img-profile rounded-circle" src="foto.jpg" />
                                 </a>
                                 <!-- Dropdown - User Information -->
